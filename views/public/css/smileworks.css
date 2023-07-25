@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Vollkorn:wght@800&display=swap');
+
+:root {
+  --primary-color: #27c2c3;
+  --secondary-color: #00e598;
+  --third-color: #d0ebeb;
+  --title-font: 'Vollkorn', serif;
+  --content-font:'Open Sans', sans-serif;
+
+  
+}
+
+html body {
+  background-color: var(--third-color);
+}
+
+nav a {
+  width: 15%;
+}
+
+nav a img {
+  width: 100%;
+}
+
+.promo-img-bg img {
+  width: 38%;
+}
+
+.circle-banner {
+  position: absolute;
+  top: 26%;
+  right: 23%;
+  width: 20rem;
+  height: 20rem;
+  background-color: #ffffff; /* Puedes cambiar el color aquí */
+  border-radius: 50%; /* Esto hace que el elemento sea un círculo */
+  background-image: url("/views/public/assets/banner-user.jpg"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.circle-promo {
+  position: absolute;
+  top: 17%;
+  right: 38%;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--secondary-color); /* Puedes cambiar el color aquí */
+  border-radius: 50%; /* Esto hace que el elemento sea un círculo */
+  z-index: 1;
+}
+
+.circle-promo div {
+  margin: 20%;
+}
+
+.circle-promo div span:nth-child(1) {
+  font-size: 1rem;
+}
+
+.circle-promo div span:nth-child(2) {
+  font-size: 3rem;
+}
+
+.circle-promo div span:nth-child(3) {
+  font-size: 0.7rem;
+}
