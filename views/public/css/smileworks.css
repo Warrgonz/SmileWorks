@@ -1,17 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Vollkorn:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Vollkorn:wght@800&display=swap");
 
 :root {
   --primary-color: #27c2c3;
   --secondary-color: #00e598;
-  --third-color: #d0ebeb;
-  --title-font: 'Vollkorn', serif;
-  --content-font:'Open Sans', sans-serif;
-
-  
-}
-
-html body {
-  background-color: var(--third-color);
+  --third-color: #003050;
+  --title-font: "Vollkorn", serif;
+  --content-font: "Open Sans", sans-serif;
 }
 
 nav a {
@@ -22,6 +16,39 @@ nav a img {
   width: 100%;
 }
 
+.hero {
+  background-color: var(--third-color); /* Puedes cambiar el color aquí */
+  background-image: url("/views/public/assets/bg-pattern.png"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-family: var(--title-font);
+  padding: 5% 0px 5% 0px;
+  color: var(--secondary-color);
+}
+.hero h2 {
+  font-size: 1.5em;
+  padding-left: 7%;
+  color: white;
+}
+.hero p {
+  font-size: 1rem;
+  font-family: var(--content-font);
+  padding-left: 7%;
+  color: white;
+}
+.hero button {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+.two-squares img {
+  width: 20%;
+  padding-top: 10%;
+}
 .promo-img-bg img {
   width: 38%;
 }
@@ -57,12 +84,64 @@ nav a img {
 
 .circle-promo div span:nth-child(1) {
   font-size: 1rem;
+  font-family: var(--content-font);
 }
 
 .circle-promo div span:nth-child(2) {
   font-size: 3rem;
+  font-family: var(--title-font);
+}
+.square {
+  position: absolute;
+  top: 10em;
+  left: 70rem;
+  right: 0;
+  transform: rotate(90deg);
 }
 
-.circle-promo div span:nth-child(3) {
-  font-size: 0.7rem;
+.square img {
+  width: 70%;
+}
+
+/*Medias*/
+
+@media (min-width: 1281px) {
+  /* CSS */
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+  .promo-img-bg img {
+    display: none;
+  }
+
+  .circle-banner {
+    display: none;
+  }
+  .circle-promo {
+    display: none;
+  }
+  .circle-promo div span:nth-child(1) {
+    display: none;
+  }
+  .hero h1{
+    font-size: 3rem;
+  }
+
 }
