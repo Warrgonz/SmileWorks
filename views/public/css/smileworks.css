@@ -16,6 +16,29 @@ nav a img {
   width: 100%;
 }
 
+h1, h2, h3{
+  font-family: var(--title-font);
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2.5rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+p{
+  font-family: var(--content-font);
+  font-size: 1rem;
+}
+
+
+
 .hero {
   background-color: var(--third-color); /* Puedes cambiar el color aquí */
   background-image: url("/views/public/assets/bg-pattern.png"); /* The image used */
@@ -100,13 +123,80 @@ nav a img {
 }
 
 .square img {
-  width: 70%;
+  width: 100%;
   
+}
+
+.about{
+  background-color: var(--primary-color);
+}
+.about h2{
+  color: var(--secondary-color);
+}
+.about p{
+  color: white;
+}
+.testimonials h2{
+  color: #00e598;
+}
+
+.testimonials img{
+  border-radius:30em;
+  width: 25%;
+}
+.testimonials i{
+  color: var(--secondary-color);
 }
 
 .about img{
   width: 100%;
 }
+
+.servicios{
+  background-color: var(--third-color); /* Puedes cambiar el color aquí */
+  background-image: url("/views/public/assets/bg-pattern.png"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  padding: 5%;
+}
+.servicios .row div{
+  padding: 2%;
+}
+.servicios h2{
+  color: var(--secondary-color);
+}
+.servicios h3{
+  display: flex;
+  color: var(--primary-color);
+}
+
+.servicios p{
+  color: white;
+}
+
+.img-ilustracion{
+  display: flex;
+  justify-content: center;
+}
+
+.img-ilustracion img{
+  display: block;
+  width: 80%;
+}
+.testimonials p{
+  color: white;
+}
+.testimonials h4{
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.testimonials .profile div{
+  max-height: 300px;
+}
+
+
 
 
 /*Medias*/
