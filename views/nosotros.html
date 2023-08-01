@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileWorks</title>
+    <link rel="stylesheet" href="public/css/smileworks.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/views/public/assets/favicon.png">
+</head>
+
+<body>
+    <!-- Contenedor del navbar -->
+    <!-- navbar.html -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/views/public/assets/logo.png" alt="SmileWorks"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/views/nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu"><i
+                                class="fa-solid fa-ellipsis fa-l"></i></a>
+                    </li>
+                </ul>
+                <a class="d-flex" href="/views/agendarCita.html">
+                    <button class="btn btn-outline-success" type="submit">Agendar cita</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Submenu-->
+
+    <section class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="menu" aria-labelledby="menu">
+        <div class="offcanvas-header">
+            <!--agregar logo-->
+            <a href="/index.html"><img src="/views/public/assets/logo.png" alt="Cuavila"></a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar menu"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav pt-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/views/contactarnos.html">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/views/faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/views/observaciones.html">Encuesta</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contenedor del scrollTop -->
+
+    <section class="nosotros">
+        <h1 class="text-center py-5">Sobre nosotros</h1>
+
+    </section>
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Trayectoria de SmileWorks</h2>
+                <p>En SmileWorks, llevamos años brindando servicios odontológicos de calidad y atención personalizada a
+                    nuestros pacientes. Nuestra clínica fue fundada con la visión de crear un espacio en el que los
+                    pacientes se sientan cómodos y confiados al recibir tratamientos dentales de primera categoría. A lo
+                    largo de nuestra trayectoria, hemos acumulado una amplia experiencia y hemos sido testigos de
+                    innumerables sonrisas transformadas. Nuestro equipo de profesionales altamente capacitados está
+                    comprometido con la excelencia en el cuidado bucal y busca constantemente mejorar la salud oral de
+                    nuestros pacientes. Confía en SmileWorks para recibir la mejor atención dental y recuperar la
+                    confianza en tu sonrisa.</p>
+                <div class="d-flex justify-content-center">
+                    <img class="w-50" src="public/assets/nosotros-equipo.jpg" alt="equipo odontologo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-2">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Quiénes Somos</h2>
+                <p>En SmileWorks, somos un equipo de profesionales apasionados por la odontología y comprometidos con el
+                    bienestar dental de nuestros pacientes. Nuestra clínica cuenta con un grupo de especialistas
+                    altamente calificados y experimentados en diversas áreas de la odontología, lo que nos permite
+                    ofrecer una amplia gama de servicios y tratamientos. Nos enorgullecemos de brindar una atención
+                    cálida y personalizada, escuchando las necesidades individuales de cada paciente y diseñando planes
+                    de tratamiento adaptados a sus requerimientos. Nuestra misión es proporcionar una experiencia dental
+                    positiva y de calidad, donde la salud y la estética bucal se unan para lograr sonrisas radiantes y
+                    saludables. Ven a conocernos y descubre por qué somos la opción preferida de tantas personas para el
+                    cuidado dental.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Misión</h3>
+                <p>Nuestra misión en SmileWorks es proporcionar servicios odontológicos de calidad y atención
+                    personalizada, enfocándonos en mejorar la salud y estética bucal de nuestros pacientes para que
+                    puedan disfrutar de sonrisas saludables y radiantes.</p>
+            </div>
+            <div class="col-lg-6">
+                <h3>Visión</h3>
+                <p>Nuestra visión es convertirnos en la clínica dental líder en nuestra comunidad, reconocidos por
+                    nuestro compromiso con la excelencia en el cuidado bucal y la satisfacción de nuestros pacientes.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-12">
+                <h3>Valores</h3>
+                <ul>
+                    <li>Profesionalismo: Nos esforzamos por brindar tratamientos y servicios con los más altos
+                        estándares de calidad profesional.</li>
+                    <li>Ética: Actuamos con integridad y respeto en todas nuestras interacciones con los pacientes.</li>
+                    <li>Empatía: Escuchamos las necesidades y preocupaciones de nuestros pacientes para ofrecer
+                        soluciones personalizadas.</li>
+                    <li>Innovación: Mantenemosnos actualizados con las últimas técnicas y tecnologías para ofrecer los
+                        mejores tratamientos disponibles.</li>
+                    <li>Trabajo en equipo: Colaboramos y coordinamos esfuerzos para garantizar una experiencia de
+                        atención integral y eficiente.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class=" container mt-2">
+        <div class="row ">
+            <div class="col-lg-12">
+                <h2>Ubicación</h2>
+                <p>Estamos ubicados en 123 Calle Sonrisa Radiante, Barrio Dental Feliz, Ciudad Dentalandia, País
+                    Dentopia. ¡Visítanos para obtener una sonrisa saludable y feliz! Nuestro equipo de profesionales
+                    estará encantado de atenderte y brindarte la mejor atención odontológica. Ven y descubre cómo
+                    podemos mejorar tu salud bucal y devolverle el brillo a tu sonrisa. ¡Te esperamos con los brazos
+                    abiertos en nuestra clínica dental!
+                </p>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62879.678877131104!2d-84.15463077286186!3d9.935627667804761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e342c50d15c5%3A0xe6746a6a9f11b882!2zU2FuIEpvc8Op!5e0!3m2!1ses-419!2scr!4v1690921636132!5m2!1ses-419!2scr"
+                width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <h2 class="text-center py-3 text-green">¿Tienes alguna duda adicional?</h2>
+            <p class="">¡Estamos aquí para ayudarte! Si tienes alguna otra pregunta o inquietud sobre nuestros servicios
+                odontológicos, procesos de tratamiento, opciones de financiamiento o cualquier otro tema relacionado con
+                tu salud bucal, no dudes en contactarnos. Nuestro equipo de especialistas en SmileWorks estará encantado
+                de brindarte la información que necesitas y asistirte en todo lo que podamos. Tu satisfacción y
+                bienestar son nuestra máxima prioridad, y estamos comprometidos a proporcionarte una experiencia dental
+                positiva y de calidad. ¡Esperamos verte pronto en nuestra clínica dental y ayudarte a lograr una sonrisa
+                radiante y saludable!</p>
+            <div class="d-flex justify-content-center pb-3">
+                <a href="contactarnos.html"><button class="btn btn-outline-success btn-md">Contáctanos</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenedor del footer -->
+    <!-- Footer -->
+    <footer class="text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+                    href="https://www.facebook.com/groups/1800443506890570" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+                    href="https://twitter.com/MundoOdontologo" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+                    href="https://www.google.com/search?client=opera-gx&q=dentista&sourceid=opera&ie=UTF-8&oe=UTF-8"
+                    role="button"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+                    href="https://www.instagram.com/dr.walterchaverri/" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+            <section>
+                <form>
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Subscribete para recibir novedades y ofertas</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example21" class="form-control" />
+                                <label class="form-label" for="form5Example21">Correo electrónico</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Subscribirse
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Estamos ubicados en
+                    123 Calle Sonrisa Radiante,
+                    Barrio Dental Feliz,
+                    Ciudad Dentalandia,
+                    País Dentopia.
+
+                    ¡Visítanos para obtener una sonrisa saludable y feliz! Nuestro equipo de profesionales estará
+                    encantado
+                    de atenderte y brindarte la mejor atención odontológica. Ven y descubre cómo podemos mejorar tu
+                    salud
+                    bucal y devolverle el brillo a tu sonrisa. ¡Te esperamos con los brazos abiertos en nuestra clínica
+                    dental!
+                </p>
+            </section>
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 copyright">
+            © 2023 Copyright:
+            <a class="text-white">Universidad Hispanoamericana</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="/views/public/js/templates.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4ccaae5e72.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

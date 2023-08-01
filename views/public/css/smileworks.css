@@ -113,10 +113,10 @@ p {
 
 .circle-banner {
   position: absolute;
-  top: 26%;
-  right: 23%;
-  width: 20rem;
-  height: 20rem;
+  top: 22%;
+  right: 29%;
+  width: 23rem;
+  height: 23rem;
   background-color: #ffffff; /* Puedes cambiar el color aquí */
   border-radius: 50%; /* Esto hace que el elemento sea un círculo */
   background-image: url("/views/public/assets/banner-user.jpg"); /* The image used */
@@ -128,7 +128,7 @@ p {
 .circle-promo {
   position: absolute;
   top: 17%;
-  right: 38%;
+  right: 41%;
   width: 10rem;
   height: 10rem;
   background-color: var(--secondary-color); /* Puedes cambiar el color aquí */
@@ -149,13 +149,7 @@ p {
   font-size: 3rem;
   font-family: var(--title-font);
 }
-.square {
-  position: absolute;
-  top: 10em;
-  left: 70rem;
-  right: 0;
-  transform: rotate(90deg);
-}
+
 
 .square img {
   width: 100%;
@@ -272,31 +266,107 @@ footer {
   background-size: cover;
   color: white ;
 }
-.text-green{
+.nosotros{
+  padding: 3%;
+  background-image: linear-gradient(to bottom, white, #003050), url("/views/public/assets/nosotros.png");
+  background-position: center;
+  background-blend-mode: multiply; /* Aplica una mezcla de color para que el gradiente no oculte completamente la imagen */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white ;
+}
+.botonScrollTop {
+  /* hacemos que el boton scroll top se mantenga fijo mientras se hace scroll  */
+  position: fixed;
+  height: 5%;
+  width: 4%;
+  right: 5%;
+  bottom: 30px;
+  text-align: center;
+  line-height: 45px;
   color: var(--secondary-color);
+  background-color: #2f334a;
+  font-size: 25px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
-
-/*Medias*/
-
-@media (min-width: 1281px) {
-  /* CSS */
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* CSS */
-}
+/*.text-green{
+  color: var(--secondary-color);
+}*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* CSS */
+  .promo-img-bg img {
+    display: none;
+  }
+
+  .circle-banner {
+    display: none;
+  }
+  .circle-promo {
+    display: none;
+  }
+  .circle-promo div span:nth-child(1) {
+    display: none;
+  }
+  nav img {
+    min-width: 200px;
+}
+.botonScrollTop {
+  /* hacemos que el boton scroll top se mantenga fijo mientras se hace scroll  */
+  height: 5%;
+  width: 7%;
+  right: 10%;
+}
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* CSS */
+  .promo-img-bg img {
+    display: none;
+  }
+
+  .circle-banner {
+    display: none;
+  }
+  .circle-promo {
+    display: none;
+  }
+  .circle-promo div span:nth-child(1) {
+    display: none;
+  }
+  nav img {
+    min-width: 200px;
+}
+.botonScrollTop {
+  /* hacemos que el boton scroll top se mantenga fijo mientras se hace scroll  */
+  height: 6%;
+  width: 15%;
+  right: 10%;
+}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  /* CSS */
+  .promo-img-bg img {
+    display: none;
+  }
+
+  .circle-banner {
+    display: none;
+  }
+  .circle-promo {
+    display: none;
+  }
+  .circle-promo div span:nth-child(1) {
+    display: none;
+  }
+  nav img {
+    min-width: 150px;
+}
+.botonScrollTop {
+  /* hacemos que el boton scroll top se mantenga fijo mientras se hace scroll  */
+  height: 6%;
+  width: 15%;
+  right: 10%;
+}
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -317,4 +387,13 @@ footer {
   .hero h1 {
     font-size: 3rem;
   }
+  nav img {
+    min-width: 150px;
+}
+.botonScrollTop {
+  /* hacemos que el boton scroll top se mantenga fijo mientras se hace scroll  */
+  height: 6%;
+  width: 15%;
+  right: 10%;
+}
 }
