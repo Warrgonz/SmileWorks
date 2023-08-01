@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileWorks</title>
+    <link rel="stylesheet" href="public/css/smileworks.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/views/public/assets/favicon.png">
+</head>
+
+<body>
+    <!-- Contenedor del navbar -->
+    <!-- navbar.html -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/views/public/assets/logo.png" alt="SmileWorks"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/views/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/views/beneficios.html">Beneficios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu"><i
+                                class="fa-solid fa-ellipsis fa-l"></i></a>
+                    </li>
+                </ul>
+                <a class="d-flex" href="/views/agendarCita.html">
+                    <button class="btn btn-outline-success" type="submit">Agendar cita</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Submenu-->
+
+    <section class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="menu" aria-labelledby="menu">
+        <div class="offcanvas-header">
+            <!--agregar logo-->
+            <a href="/index.html"><img src="/views/public/assets/logo.png" alt="Cuavila"></a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar menu"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav pt-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/views/contactarnos.html">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/views/faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/views/observaciones.html">Encuesta</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contenedor del scrollTop -->
+
+    <section class="faq">
+        <h1 class="text-center py-5">Preguntas frecuentes</h1>
+
+    </section>
+    <section>
+        <div class="container">
+            <p class="text-center py-4">Aquí te presentamos una lista de preguntas frecuentes que nuestros pacientes
+                suelen tener. Si tienes alguna inquietud adicional o necesitas más información, no dudes en comunicarte
+                con nosotros. Estamos encantados de ayudarte a resolver cualquier duda que puedas tener.</p>
+            <div class="row py-2">
+                <div class="col-lg-6">
+
+                    <!-- Acordeón 1 -->
+                    <div class="accordion" id="faqAccordionLeft">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingOneLeft">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapseOneLeft" aria-expanded="false"
+                                    aria-controls="faqCollapseOneLeft">
+                                    ¿Cuándo debo realizar una visita al dentista para una revisión regular?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseOneLeft" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingOneLeft" data-bs-parent="#faqAccordionLeft">
+                                <div class="accordion-body">
+                                    <p>Se recomienda realizar una visita al dentista para una revisión regular al menos
+                                        cada seis meses. Estas visitas permiten a nuestro equipo de expertos en
+                                        SmileWorks realizar una evaluación completa de tu salud bucal, detectar posibles
+                                        problemas a tiempo y brindarte tratamientos preventivos para mantener tu sonrisa
+                                        en óptimas condiciones.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingTwoLeft">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapseTwoLeft" aria-expanded="false"
+                                    aria-controls="faqCollapseTwoLeft">
+                                    ¿Qué opciones de blanqueamiento dental ofrecen en SmileWorks?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseTwoLeft" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingTwoLeft" data-bs-parent="#faqAccordionLeft">
+                                <div class="accordion-body">
+                                    <p>En SmileWorks, ofrecemos diferentes opciones de blanqueamiento dental para
+                                        satisfacer las necesidades de nuestros pacientes. Contamos con tratamientos de
+                                        blanqueamiento en consultorio, que brindan resultados rápidos y efectivos, así
+                                        como kits de blanqueamiento para uso en el hogar con supervisión profesional.
+                                        Nuestro equipo te asesorará sobre la mejor opción para ti, considerando tus
+                                        objetivos estéticos y tu salud bucal.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingThreeLeft">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapseThreeLeft" aria-expanded="false"
+                                    aria-controls="faqCollapseThreeLeft">
+                                    ¿Cuáles son los beneficios de los implantes dentales?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseThreeLeft" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingThreeLeft" data-bs-parent="#faqAccordionLeft">
+                                <div class="accordion-body">
+                                    <p>Los implantes dentales son una solución permanente y segura para reemplazar
+                                        dientes perdidos. Entre sus beneficios se encuentran la mejora de la función
+                                        masticatoria, el soporte de la estructura facial y la prevención de la pérdida
+                                        ósea. En SmileWorks, nuestros especialistas en implantes dentales utilizan
+                                        tecnología avanzada y materiales de alta calidad para brindarte resultados
+                                        naturales y duraderos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingFourLeft">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapseFourLeft" aria-expanded="false"
+                                    aria-controls="faqCollapseFourLeft">
+                                    ¿Qué debo hacer en caso de una emergencia dental fuera del horario de atención?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseFourLeft" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingFourLeft" data-bs-parent="#faqAccordionLeft">
+                                <div class="accordion-body">
+                                    <p>En caso de una emergencia dental fuera del horario de atención, te recomendamos
+                                        comunicarte con nuestro servicio de atención telefónica de emergencias. Nuestro
+                                        equipo de dentistas estará disponible para brindarte asistencia y programar una
+                                        cita urgente en nuestra clínica lo antes posible. La pronta atención en
+                                        situaciones de emergencia es fundamental para garantizar el bienestar de tu
+                                        salud bucal.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingFiveLeft">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapseFiveLeft" aria-expanded="false"
+                                    aria-controls="faqCollapseFiveLeft">
+                                    ¿Cuál es la edad recomendada para iniciar el tratamiento de ortodoncia?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseFiveLeft" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingFiveLeft" data-bs-parent="#faqAccordionLeft">
+                                <div class="accordion-body">
+                                    <p>En SmileWorks, recomendamos que los niños realicen una evaluación ortodóntica
+                                        alrededor de los 7 años de edad. Sin embargo, no existe una edad límite para
+                                        recibir tratamiento ortodóntico. Nuestro equipo de ortodoncistas evaluará tus
+                                        necesidades y te ofrecerá opciones de tratamientos adecuados para alcanzar una
+                                        sonrisa recta y alineada, independientemente de tu edad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <!-- Acordeón 6 -->
+                    <div class="accordion" id="faqAccordionRight">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingSixRight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapseSixRight" aria-expanded="false"
+                                    aria-controls="faqCollapseSixRight">
+                                    ¿Cuánto tiempo tarda el proceso de recuperación después de una cirugía dental?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseSixRight" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingSixRight" data-bs-parent="#faqAccordionRight">
+                                <div class="accordion-body">
+                                    <p>El tiempo de recuperación después de una cirugía dental puede variar dependiendo
+                                        del tipo de procedimiento realizado. En general, es normal experimentar algo de
+                                        hinchazón y molestias los primeros días. Nuestros especialistas en SmileWorks te
+                                        proporcionarán instrucciones detalladas sobre cómo cuidar tu boca durante el
+                                        proceso de recuperación y te recomendarán medicamentos para controlar el dolor,
+                                        si es necesario. Si tienes alguna preocupación o experimentas síntomas
+                                        inusuales, no dudes en comunicarte con nuestro equipo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón 7 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingSevenRight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapseSevenRight" aria-expanded="false"
+                                    aria-controls="faqCollapseSevenRight">
+                                    ¿Puedo obtener un reemplazo temporal mientras espero la colocación de un implante
+                                    dental permanente?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseSevenRight" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingSevenRight" data-bs-parent="#faqAccordionRight">
+                                <div class="accordion-body">
+                                    <p>Sí, en SmileWorks ofrecemos opciones de reemplazo temporal mientras esperas la
+                                        colocación de un implante dental permanente. Dependiendo de tu caso, podemos
+                                        proporcionarte una prótesis dental removible o un puente dental provisional para
+                                        restaurar tu sonrisa y función masticatoria. Estos reemplazos temporales te
+                                        permitirán sentirte cómodo mientras esperas la finalización del proceso de
+                                        implante dental. Nuestro equipo de profesionales te guiará en todas las etapas
+                                        del tratamiento para asegurar que obtengas resultados satisfactorios.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón 8 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingEightRight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapseEightRight" aria-expanded="false"
+                                    aria-controls="faqCollapseEightRight">
+                                    ¿Es normal sentir sensibilidad dental después de un tratamiento de blanqueamiento?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseEightRight" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingEightRight" data-bs-parent="#faqAccordionRight">
+                                <div class="accordion-body">
+                                    <p>Sí, es normal experimentar sensibilidad dental después de un tratamiento de
+                                        blanqueamiento. Esta sensibilidad suele ser temporal y desaparecerá en unos
+                                        días. Nuestro equipo de SmileWorks te proporcionará instrucciones sobre cómo
+                                        reducir la sensibilidad y mejorar tu comodidad durante este período. Además,
+                                        recomendamos evitar alimentos y bebidas demasiado calientes o fríos, así como
+                                        utilizar pastas dentales diseñadas específicamente para dientes sensibles. Si la
+                                        sensibilidad persiste o es intensa, te recomendamos comunicarte con nuestro
+                                        equipo para obtener asesoramiento adicional.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón 9 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingNineRight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapseNineRight" aria-expanded="false"
+                                    aria-controls="faqCollapseNineRight">
+                                    ¿Qué opciones de pago aceptan en SmileWorks?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseNineRight" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingNineRight" data-bs-parent="#faqAccordionRight">
+                                <div class="accordion-body">
+                                    <p>En SmileWorks, aceptamos varias opciones de pago para mayor comodidad de nuestros
+                                        pacientes. Aceptamos efectivo, tarjetas de crédito y débito, así como opciones
+                                        de financiamiento a través de planes de pago flexibles. Nuestro equipo
+                                        administrativo te asistirá en el proceso de pago y te proporcionará información
+                                        detallada sobre las opciones de financiamiento disponibles. Nuestra prioridad es
+                                        hacer que tus tratamientos dentales sean accesibles y asequibles, para que
+                                        puedas obtener la atención que necesitas para tu salud bucal.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Acordeón 10 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingTenRight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapseTenRight" aria-expanded="false"
+                                    aria-controls="faqCollapseTenRight">
+                                    ¿Cuál es el proceso para obtener carillas dentales en SmileWorks?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseTenRight" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingTenRight" data-bs-parent="#faqAccordionRight">
+                                <div class="accordion-body">
+                                    <p>El proceso para obtener carillas dentales en SmileWorks comienza con una consulta
+                                        con nuestros dentistas especializados. En esta cita, se evaluará tu salud bucal
+                                        y se discutirán tus objetivos estéticos. Si las carillas dentales son una opción
+                                        adecuada para ti, se realizará una preparación mínima de los dientes para
+                                        colocar las carillas. Luego, se tomarán impresiones de tus dientes para crear
+                                        carillas personalizadas. En una cita posterior, se colocarán las carillas sobre
+                                        tus dientes para mejorar su apariencia y funcionalidad. Nuestro equipo te guiará
+                                        en cada paso del proceso para asegurarse de que estés satisfecho con tus
+                                        resultados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="text-center py-3 text-green">¿Tienes alguna duda adicional?</h2>
+            <p class="">¡Estamos aquí para ayudarte! Si tienes alguna otra pregunta o inquietud sobre nuestros servicios
+                odontológicos, procesos de tratamiento, opciones de financiamiento o cualquier otro tema relacionado con
+                tu salud bucal, no dudes en contactarnos. Nuestro equipo de especialistas en SmileWorks estará encantado
+                de brindarte la información que necesitas y asistirte en todo lo que podamos. Tu satisfacción y
+                bienestar son nuestra máxima prioridad, y estamos comprometidos a proporcionarte una experiencia dental
+                positiva y de calidad. ¡Esperamos verte pronto en nuestra clínica dental y ayudarte a lograr una sonrisa
+                radiante y saludable!</p>
+            <div class="d-flex justify-content-center pb-3">
+                <a href="contactarnos.html"><button class="btn btn-outline-success btn-md">Contáctanos</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenedor del footer -->
+    <!-- Footer -->
+    <footer class="text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+                    href="https://www.facebook.com/groups/1800443506890570" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+                    href="https://twitter.com/MundoOdontologo" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+                    href="https://www.google.com/search?client=opera-gx&q=dentista&sourceid=opera&ie=UTF-8&oe=UTF-8"
+                    role="button"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+                    href="https://www.instagram.com/dr.walterchaverri/" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+            <section>
+                <form>
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Subscribete para recibir novedades y ofertas</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example21" class="form-control" />
+                                <label class="form-label" for="form5Example21">Correo electrónico</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Subscribirse
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Estamos ubicados en
+                    123 Calle Sonrisa Radiante,
+                    Barrio Dental Feliz,
+                    Ciudad Dentalandia,
+                    País Dentopia.
+
+                    ¡Visítanos para obtener una sonrisa saludable y feliz! Nuestro equipo de profesionales estará
+                    encantado
+                    de atenderte y brindarte la mejor atención odontológica. Ven y descubre cómo podemos mejorar tu
+                    salud
+                    bucal y devolverle el brillo a tu sonrisa. ¡Te esperamos con los brazos abiertos en nuestra clínica
+                    dental!
+                </p>
+            </section>
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 copyright">
+            © 2023 Copyright:
+            <a class="text-white">Universidad Hispanoamericana</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="/views/public/js/templates.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4ccaae5e72.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

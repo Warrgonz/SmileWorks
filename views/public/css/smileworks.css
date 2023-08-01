@@ -12,32 +12,67 @@ nav a {
   width: 15%;
 }
 
-nav a img {
+nav a {
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: #00e598 !important;
+}
+
+nav button{
+  background-color: #003050 !important;
+  border-color: #003050 !important;
+  color: white !important;
+}
+nav button:hover{
+  background-color: #27c2c3 !important;
+  color: white !important;
+  border-color: #27c2c3 !important;
+}
+
+.btn-outline-success{
+  background-color: #003050 !important;
+  border-color: #003050 !important;
+  color: white !important;
+}
+
+.btn-outline-success:hover{
+  background-color: #27c2c3 !important;
+  color: white !important;
+  border-color: #27c2c3 !important;
+}
+
+
+nav img {
+  width: 100%;
+}
+.offcanvas img {
   width: 100%;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
   font-family: var(--title-font);
 }
 
-h1{
+h1 {
   font-size: 3rem;
 }
 
-h2{
+h2 {
   font-size: 2.5rem;
 }
 
-h3{
+h3 {
   font-size: 2rem;
 }
 
-p{
+p {
   font-family: var(--content-font);
   font-size: 1rem;
 }
-
-
 
 .hero {
   background-color: var(--third-color); /* Puedes cambiar el color aquí */
@@ -124,35 +159,34 @@ p{
 
 .square img {
   width: 100%;
-  
 }
 
-.about{
+.about {
   background-color: var(--primary-color);
 }
-.about h2{
+.about h2 {
   color: var(--secondary-color);
 }
-.about p{
+.about p {
   color: white;
 }
-.testimonials h2{
+.testimonials h2 {
   color: #00e598;
 }
 
-.testimonials img{
-  border-radius:30em;
-  width: 25%;
+.testimonials img {
+  border-radius: 30em;
+  width: 35%;
 }
-.testimonials i{
+.testimonials i {
   color: var(--secondary-color);
 }
 
-.about img{
+.about img {
   width: 100%;
 }
 
-.servicios{
+.servicios {
   background-color: var(--third-color); /* Puedes cambiar el color aquí */
   background-image: url("/views/public/assets/bg-pattern.png"); /* The image used */
   background-position: center; /* Center the image */
@@ -160,43 +194,87 @@ p{
   background-size: cover; /* Resize the background image to cover the entire container */
   padding: 5%;
 }
-.servicios .row div{
+.servicios .row div {
   padding: 2%;
 }
-.servicios h2{
+.servicios h2 {
   color: var(--secondary-color);
 }
-.servicios h3{
+.servicios h3 {
   display: flex;
   color: var(--primary-color);
 }
 
-.servicios p{
+.servicios p {
   color: white;
 }
 
-.img-ilustracion{
+.img-ilustracion {
   display: flex;
   justify-content: center;
 }
 
-.img-ilustracion img{
+.img-ilustracion img {
   display: block;
   width: 80%;
 }
-.testimonials p{
+.testimonials p {
   color: white;
 }
-.testimonials h4{
+.testimonials h4 {
   color: var(--primary-color);
   font-size: 1.5rem;
 }
 
-.testimonials .profile div{
+.testimonials .profile div {
   max-height: 300px;
 }
+.servicios{
+  padding: 9vh 0vw;
+}
+footer .copyright {
+  background-color: var(--secondary-color);
+  color: black;
+}
+footer {
+  background-color: var(--third-color);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
+/*contacto*/
 
+.contacto {
+  padding: 3%;
+  background-image: linear-gradient(to bottom, white, #003050), url("/views/public/assets/contacto.png");
+  background-position: center;
+  background-blend-mode: multiply; /* Aplica una mezcla de color para que el gradiente no oculte completamente la imagen */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white ;
+}
+.faq {
+  padding: 3%;
+  background-image: linear-gradient(to bottom, white, #003050), url("/views/public/assets/faq.png");
+  background-position: center;
+  background-blend-mode: multiply; /* Aplica una mezcla de color para que el gradiente no oculte completamente la imagen */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white ;
+}
+.cita{
+  padding: 3%;
+  background-image: linear-gradient(to bottom, white, #003050), url("/views/public/assets/cita.png");
+  background-position: center;
+  background-blend-mode: multiply; /* Aplica una mezcla de color para que el gradiente no oculte completamente la imagen */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white ;
+}
+.text-green{
+  color: var(--secondary-color);
+}
 
 
 /*Medias*/
@@ -236,8 +314,7 @@ p{
   .circle-promo div span:nth-child(1) {
     display: none;
   }
-  .hero h1{
+  .hero h1 {
     font-size: 3rem;
   }
-
 }

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileWorks</title>
+    <link rel="stylesheet" href="public/css/smileworks.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/views/public/assets/favicon.png">
+</head>
+
+<body>
+    <!-- Contenedor del navbar -->
+    <!-- navbar.html -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/views/public/assets/logo.png" alt="SmileWorks"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/views/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/views/beneficios.html">Beneficios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu"><i
+                                class="fa-solid fa-ellipsis fa-l"></i></a>
+                    </li>
+                </ul>
+                <a class="d-flex" href="/views/agendarCita.html">
+                    <button class="btn btn-outline-success" type="submit">Agendar cita</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Submenu-->
+
+    <section class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="menu" aria-labelledby="menu">
+        <div class="offcanvas-header">
+            <!--agregar logo-->
+            <a href="/index.html"><img src="/views/public/assets/logo.png" alt="Cuavila"></a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar menu"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav pt-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/views/contactarnos.html">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/views/faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/views/observaciones.html">Encuesta</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contenedor del scrollTop -->
+
+    <section class="faq">
+        <h1 class="text-center py-5">Encuesta de satisfacción</h1>
+
+    </section>
+
+    <section>
+        <div class="container">
+            
+  <div class="container mt-5">
+    <p>En SmileWorks, nuestra prioridad es brindarte un servicio excepcional y una experiencia dental satisfactoria. Tu opinión es fundamental para seguir mejorando y ofrecerte la mejor atención posible. Te invitamos a completar nuestra encuesta de satisfacción para compartir tus comentarios, sugerencias y evaluación sobre nuestros servicios. Tu feedback nos ayudará a identificar áreas de mejora y nos permitirá continuar brindándote una atención odontológica de calidad.</p>
+    <p>Valoramos tu tiempo y agradecemos tu participación en esta encuesta. ¡Tu sonrisa es nuestra mayor recompensa!</p>
+
+
+    <form action="#" method="POST">
+
+      <!-- Nombre -->
+      <div class="form-group">
+        <label for="inputName">Nombre:</label>
+        <input type="text" class="form-control" id="inputName" name="name" required>
+      </div>
+
+      <!-- Correo electrónico -->
+      <div class="form-group">
+        <label for="inputEmail">Correo electrónico:</label>
+        <input type="email" class="form-control" id="inputEmail" name="email" required>
+      </div>
+
+      <!-- Teléfono -->
+      <div class="form-group">
+        <label for="inputPhone">Teléfono:</label>
+        <input type="tel" class="form-control" id="inputPhone" name="phone" required>
+      </div>
+
+      <!-- Ciudad -->
+      <div class="form-group">
+        <label for="inputCity">Ciudad:</label>
+        <input type="text" class="form-control" id="inputCity" name="city" required>
+      </div>
+
+      <!-- Comentario -->
+      <div class="form-group">
+        <label for="inputComment">Comentario y Aportes:</label>
+        <textarea class="form-control" id="inputComment" name="comment" rows="6" required></textarea>
+      </div>
+
+      <!-- Satisfacción del Servicio -->
+      <div class="form-group">
+        <label>¿Qué tan satisfecho estás con nuestro servicio?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction1" value="Muy Satisfecho"
+            required>
+          <label class="form-check-label" for="satisfaction1">Muy Satisfecho</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction2" value="Satisfecho">
+          <label class="form-check-label" for="satisfaction2">Satisfecho</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction3" value="Neutral">
+          <label class="form-check-label" for="satisfaction3">Neutral</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction4" value="Insatisfecho">
+          <label class="form-check-label" for="satisfaction4">Insatisfecho</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction5" value="Muy Insatisfecho">
+          <label class="form-check-label" for="satisfaction5">Muy Insatisfecho</label>
+        </div>
+      </div>
+
+      <!-- Recomendación -->
+      <div class="form-group">
+        <label>¿Recomendarías nuestros servicios a otros?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="recommendation" id="recommendation1" value="Sí" required>
+          <label class="form-check-label" for="recommendation1">Sí</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="recommendation" id="recommendation2" value="No">
+          <label class="form-check-label" for="recommendation2">No</label>
+        </div>
+      </div>
+
+      <!-- Preguntas adicionales -->
+      <div class="form-group">
+        <label for="inputExperience">¿Cómo describirías tu experiencia en SmileWorks?</label>
+        <textarea class="form-control" id="inputExperience" name="experience" rows="4" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="inputImprovements">¿En qué aspectos crees que podríamos mejorar nuestro servicio?</label>
+        <textarea class="form-control" id="inputImprovements" name="improvements" rows="4" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="inputRecommendation">¿Tienes alguna recomendación o sugerencia para nosotros?</label>
+        <textarea class="form-control" id="inputRecommendation" name="recommendation" rows="4" required></textarea>
+      </div>
+
+      <!-- Botón de Enviar -->
+      <div class="d-flex py-3">
+        <button class="btn btn-outline-success btn-md mx-2">Enviar</button>
+        <button class="btn btn-danger btn-md mx-2">Borrar</button>
+      </div>
+    </form>
+  </div>
+        </div>
+    </section>
+
+    <!-- Contenedor del footer -->
+    <!-- Footer -->
+    <footer class="text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+                    href="https://www.facebook.com/groups/1800443506890570" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+                    href="https://twitter.com/MundoOdontologo" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+                    href="https://www.google.com/search?client=opera-gx&q=dentista&sourceid=opera&ie=UTF-8&oe=UTF-8"
+                    role="button"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+                    href="https://www.instagram.com/dr.walterchaverri/" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+            <section>
+                <form>
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Subscribete para recibir novedades y ofertas</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example21" class="form-control" />
+                                <label class="form-label" for="form5Example21">Correo electrónico</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Subscribirse
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Estamos ubicados en
+                    123 Calle Sonrisa Radiante,
+                    Barrio Dental Feliz,
+                    Ciudad Dentalandia,
+                    País Dentopia.
+
+                    ¡Visítanos para obtener una sonrisa saludable y feliz! Nuestro equipo de profesionales estará
+                    encantado
+                    de atenderte y brindarte la mejor atención odontológica. Ven y descubre cómo podemos mejorar tu
+                    salud
+                    bucal y devolverle el brillo a tu sonrisa. ¡Te esperamos con los brazos abiertos en nuestra clínica
+                    dental!
+                </p>
+            </section>
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 copyright">
+            © 2023 Copyright:
+            <a class="text-white">Universidad Hispanoamericana</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="/views/public/js/templates.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4ccaae5e72.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
